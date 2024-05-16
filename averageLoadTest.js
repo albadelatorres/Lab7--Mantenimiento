@@ -3,8 +3,8 @@ import { check, sleep } from 'k6';
 
 export const options = {
     stages: [
-        { duration: '3m', target: 2000 }, // subimos a 2000 VUs en 3 minutos
-        { duration: '3m', target: 2000 }, // nos mantenemos en 2000 VUs durante 3 minutos
+        { duration: '3m', target: 7150 }, // subimos al 50% VUs en 3 minutos
+        { duration: '3m', target: 7150 }, // nos mantenemos en 50% VUs durante 3 minutos
         { duration: '2m', target: 0 },    // bajamos a 0 VUs en 2 minutos
     ],
     thresholds: {
